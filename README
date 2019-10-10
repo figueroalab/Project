@@ -2,3 +2,4 @@ Dataset Name: Phenotypes
 
 Description: I gathered phenotypes for several fungal isolates (column headings) based on the reactions of plants with specific disease resistance (rows). Currently blank cells indicate lack of information. A = lack of disease (avirulence), V= virulence disease. Note that data comes from publications (INSERT REFS HERE). 
 
+Dataset will be found in the data folder 
