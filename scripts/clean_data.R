@@ -29,7 +29,8 @@ clean_phenotypes <- Phenotypes %>%
  gather(- Sr_gene, key = "isolate", value = "reaction") %>%  # must have three columns
  mutate(reaction = replace_na(reaction,"N")) %>% # I now replace the empty cells (NA) with N
  mutate(reaction = replace(reaction, reaction == "?", "N")) %>%  # I now replace cells in the reaction column that are "?" to "N"
- mutate(reaction = replace(reaction, reaction == "A/V", "N")) 
+ mutate(reaction = replace(reaction, reaction == "A/V", "N")) %>% 
+ 
 
 
   
@@ -43,8 +44,19 @@ clean_phenotypes <- clean_phenotypes[c(2,1,3)]
 ggplot(data = clean_phenotypes,
        mapping = aes(x = isolate, y = Sr_gene)) +
       geom_tile (aes(fill = reaction)) +
-      ylab("Wheat differentials") +
+      ylab("Wheat differentials (Sr genes)") +
       xlab("Isolate ID") +
       #scale_fill_brewer(palette= "Set5")
-    scale_fill_manual(values = c("A"="yellow", "N"= "white","V"= "red", "X" = "orange"))
+    scale_fill_manual(values = c("A"="yellow", "N"= "grey","V"= "red", "X" = "blue")) +
+    theme(text = element_text(size=12),
+        axis.text.x = element_text(angle=90, hjust=0.2,vjust=0.5),
+        axis.text.y = element_text(angle=0, hjust=1)) +
+          scale_x_discrete(position = "top", limits = c("Ug99", "Pgt55", "Pgt59", 
+                                                        "Pgt60","Pgt61","04KEN156","126-5,6,7,11", 
+                                                        "21-0", "34-2-12", 
+                                                        "34-2-12-13", "98-1,2,3,5,6", "194-1,2,3,5,6", 
+                                                        "326-1,2,3,5,6", "SA-01", "SA-02","SA-03", 
+                                                        "SA-04", "SA-05", "SA-06", "SA-07","Pgt62", "MCCFC", "RKQQC"))
+
+
 
