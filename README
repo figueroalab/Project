@@ -1,5 +1,96 @@
+This Project_readme.txt file was generated on 2019-11-20 by M.Figueroa
+
+-------------------
+GENERAL INFORMATION
+-------------------
+
+Title of Dataset: virulence phenotypes, deletion information of genes
+
+Author Information (Melania Figueroa, CSIRO, GPO BOX 1700 Canberra ACT 2601, melania.figueroa@csiro.au)
+
+	Principal Investigator: Figueroa
+	Associate or Co-investigator: Dodds, Upadhyaya
+	Alternate Contact(s):
+
+Date of data collection (single date, range, approximate date): 2019-03-01 to 2019-12-31
+
+Geographic location of data collection: unknown
+
+Information about funding sources or sponsorship that supported the collection of the data: TwoBlades Foundation
+
+
+--------------------------
+SHARING/ACCESS INFORMATION
+-------------------------- 
+
+Licenses/restrictions placed on the data, or limitations of reuse:
+
+Recommended citation for the data:
+
+Citation for and links to publications that cite or use the data:
+
+Links to other publicly accessible locations of the data:
+
+Links/relationships to ancillary or related data sets: 
+
+
+--------------------
+DATA & FILE OVERVIEW
+--------------------
+
+File list (filenames, directory structure (for zipped files) and brief description of all data files):
+
 Dataset Name: Phenotypes
 
-Description: I gathered phenotypes for several fungal isolates (column headings) based on the reactions of plants with specific disease resistance (rows). Currently blank cells indicate lack of information. A = lack of disease (avirulence), V= virulence disease. Note that data comes from publications (INSERT REFS HERE). 
+Description: I gathered phenotypes for several fungal isolates (column headings) based on the reactions of plants with specific disease resistance (rows). Currently blank cells indicate lack of information. A = lack of disease (avirulence), V= virulence disease. Dataset will be found in the data folder under Project
 
-Dataset will be found in the data folder 
+Dataset Name: Deletions_Pgt21
+
+Description: Coverage per base of gene was determined and provided by a private collaborator. The percentage of coverage per gene was then calculated.Dataset will be found in the data folder under Project
+
+
+Relationship between files, if important for context:  
+
+Additional related data collected that was not included in the current data package: N/A
+
+If data was derived from another source, list source: List publication by XXX
+
+If there are there multiple versions of the dataset, list the file updated, when and why update was made: N/A
+
+
+--------------------------
+METHODOLOGICAL INFORMATION
+--------------------------
+
+Description of methods used for collection/generation of data: <Include links or references to publications or other documentation containing experimental design or protocols used in data collection>
+
+Methods for processing the data: <describe how the submitted data were generated from the raw or collected data>
+
+Software- or Instrument-specific information needed to interpret the data, including software and hardware version numbers:
+
+Standards and calibration information, if appropriate:
+
+Environmental/experimental conditions:
+
+Describe any quality-assurance procedures performed on the data:
+
+People involved with sample collection, processing, analysis and/or submission:
+
+
+--------------------------
+DATA-SPECIFIC INFORMATION <Create sections for each datafile or set, as appropriate>
+--------------------------
+
+Dataset Name: Phenotypes
+
+Number of variables:
+
+Number of cases/rows: 54
+
+Variable list, defining any abbreviations, units of measure, codes or symbols used A = lack of disease (avirulence), V= virulence disease.
+   
+Missing data codes:Blank cells indicate lack of information.
+
+Specialized formats or other abbreviations used:
+
+
