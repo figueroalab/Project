@@ -42,6 +42,12 @@ clean_phenotypes <- Phenotypes %>%
 
 clean_phenotypes <- clean_phenotypes[c(2,1,3)]
 
+#select data that is only for gene  Sr27
+
+#interest_gene 
+
+
+
 #create a heatmap to visualize data
 
 heatmap <- ggplot(data = clean_phenotypes,
@@ -62,7 +68,7 @@ heatmap <- ggplot(data = clean_phenotypes,
                            "Pgt62", "MCCFC", "RKQQC")) +
           coord_equal()
 
-ggsave("results/first_heatmap.jpg", plot = heatmap, 
+ggsave("results/phenotype_heatmap.jpg", plot = heatmap, 
        width = 20, height = 35, units = "cm")
 
 
